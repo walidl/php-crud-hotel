@@ -17,12 +17,25 @@
     // var_dump("ok"); die();
   }
 
+  $status = $_GET["status"];
+  // $status = "all";
+  
+  if ($status != "all"){
+    $where = " WHERE pagamenti.status LIKE '$status' ";
+  }
+  else{
+    $where = "";
+  }
+
   $sql = "
-          SELECT id, price
+          SELECT pagamenti.id, pagamenti.price, paganti.name ,paganti.lastname
           FROM `pagamenti`
-          WHERE status LIKE 'pending'
-          ORDER BY price DESC
+          JOIN paganti
+          ON pagamenti.pagante_id = paganti.id
+          $where
+          ORDER BY pagamenti.price DESC
         ";
+  // echo $sql; die();
 
   $result = $conn->query($sql);
   // var_dump($result); die();

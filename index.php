@@ -26,6 +26,10 @@
           <div class="price">
             <span>{{price}}</span> $
           </div>
+          <div class="Client">
+            {{name}} {{lastname}}
+          </div>
+
         </div>
       </script>
 
@@ -40,6 +44,15 @@
 
     <h1>Pagamenti</h1>
     <div class="container">
+      <div class="options">
+        <select>
+          <option value="pending"> Pending Payments</option>
+          <option value="rejected">Rejected Payments</option>
+          <option value="accepted">Accepted Payments</option>
+          <option value="all">All Payments</option>
+
+        </select>
+      </div>
 
       <div class="tabella">
         <div class="titles">
@@ -49,9 +62,12 @@
           <div class="price">
             Price
           </div>
+          <div class="client">
+            Client
+          </div>
         </div>
         <div class="rows">
-          
+
         </div>
 
 

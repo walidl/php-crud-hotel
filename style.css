@@ -11,6 +11,7 @@ h1{
   padding: 10px;
   text-align: center;
   color: white;
+  margin-bottom: 10px;
 }
 
 .container{
@@ -18,7 +19,14 @@ h1{
   width: 90%;
   margin: auto;
 }
+
+.options{
+
+  margin-bottom: 10px;  
+}
+
 .tabella .rows > div{
+
 
   display: flex;
   padding: 5px 0;
