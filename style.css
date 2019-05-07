@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1{
+
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container{
+
+  width: 90%;
+  margin: auto;
+}
+.tabella .rows > div{
+
+  display: flex;
+  padding: 5px 0;
+  border-top : 1px solid #ccc;
+}
+
+.tabella .titles {
+
+  display: flex;
+  padding: 5px 0;
+  font-weight: bold;
+
+}
+
+.tabella .id{
+
+  width: 50px;
+  text-align: center;
+}
+.tabella .price{
+
+  width: 100px;
+  text-align: center;
+}
